@@ -7,11 +7,13 @@
     <table class="table table-bordered">
         <tr>
             <th>id</th>
-            <td>{{ $task->id }}</td>
+            <td>タスク</td>
+            <td>status</td>
         </tr>
         <tr>
-            <th>メッセージ</th>
+            <th>{{ $task->id }}</th>
             <td>{{ $task->content }}</td>
+            <td>{{ $task->status }}</td>
         </tr>
     </table>
     {!! link_to_route('tasks.edit', 'このメッセージを編集', ['task' => $task->id], ['class' => 'btn btn-light']) !!}

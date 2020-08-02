@@ -11,6 +11,8 @@
                 <div class="form-group">
                     {!! Form::label('content', 'タスク:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                    {!! Form::label('status', 'status:') !!}
+                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
                 </div>
 
                 {!! Form::submit('更新', ['class' => 'btn btn-primary']) !!}
